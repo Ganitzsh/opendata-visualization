@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet'/>
+        <link rel="stylesheet" href="./css/iThing-min.css" charset="utf-8"/>
+        <link rel="stylesheet" href="./css/style.css" charset="utf-8"/>
+        <link rel="stylesheet" href="./css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="./css/datepicker.css" media="screen" title="no title" charset="utf-8">
+    </head>
+
+    <body>
+        <div id="loader-container">
+            <div class="loader"></div>
+            <p>Loading...</p>
+        </div>
+
+        <div id="content" style="visibility: hidden;">
+            <div id="map"></div>
+            <div id="left-panel">
+                <div id="title">
+                    <p class="title">2015's Burglaries in LA</p>
+                    <p class="sub-title">Data taken from
+                        <a href="#">data.gov</a>
+                    </p>
+                </div>
+                <div id="total" class="fluid-container">
+                    <div class="row">
+                        <div id="total-bu" class="col-md-6">
+                            <p id="total-number-bu" class="important"></p>
+                            <p class="light">BURGLARIES</p>
+                        </div>
+                        <div id="total-areas" class="col-md-6">
+                            <p id="total-number-ar" class="important"></p>
+                            <p class="light">AREAS</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="range" class="section">
+                    <p>Range</p>
+                    <div id="slider-container">
+                        <div id="slider"></div>
+                    </div>
+                </div>
+                <div id="specific-date" class="section">
+                    <p>Specific date</p>
+                    <div id="datepicker-container">
+                        <div class="input-group date" id="picker-main">
+                            <input type="text" class="form-control" id="datepicker">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-th"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div id="settings" class="section">
+                    <p>Display</p>
+                    <div id="checkboxes">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="cbox_dots" value="first_checkbox" checked="true">
+                                Display dots on map (burglaries locations)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div id="stats" class="section">
+                    <p class='title'>Statistics</p>
+                    <div id="pie"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
+    <script src="./js/moment.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+    <script src='./js/jQDateRangeSlider-withRuler-min.js' charset='utf-8'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.js'></script>
+    <script src="./js/main.js" charset="utf-8"></script>
+    <script src="./js/bootstrap.js" charset="utf-8"></script>
+    <script src="./js/datepicker.js" charset="utf-8"></script>
+</html>
