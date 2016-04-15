@@ -19,3 +19,11 @@ The main goal of the visualization is to answer a bunch of questions, such as:
 # Deployment
 
 You simply need to host this on a web server. Any server will do.
+
+## Libraries & APIs
+
+* [D3.js](https://d3js.org/)
+* [MapBox](https://www.mapbox.com/)
+* [bootstrap-datepicker](https://github.com/eternicode/bootstrap-datepicker)
+* [JQuerRangeSlider](http://ghusse.github.io/jQRangeSlider/)
+* [Moment.js](http://momentjs.com/)
